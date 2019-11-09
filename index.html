@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Terry Jennings - ADR - Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#myPage">TERRY JENNINGS - ADR</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="resume.html">RESUME</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      <div class="long-pic">
+        <img src="harris-2.jpg" alt="Courthouse Ceiling" style="width: 100%;">
+      </div>
+
+      <!-- Container (MAIN section) -->
+      <div class="container">
+        <h1 class="text-center"><strong>TERRY JENNINGS - ADR</strong></h1>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="terry.jpg" class="img-circle person" alt="Terry Jennings">
+            <img src="awards.jpg"  alt="Awards" class="img-fluid">
+            <img src="aaa.jpg"  alt="AAA" class="inline-img logo">
+            <img src="board-certified.jpg"  alt="Board Certification" class="inline-img logo">
+          </div>
+
+          <div class="col-sm-8">
+            <p class="lead">
+              Independent Arbitrator and Mediator
+              <br>Senior Judge, State of Texas
+              <br>Justice, Court of Appeals for the First District of Texas, Retired</p>
+
+        <p>Justice Terry Jennings focuses on arbitrating and mediating complex, high-risk, and high-value commercial (domestic and international) and personal injury disputes. He also resolves construction, employment, and other disputes.</p>
+        <p>Justice Jennings is a Certified Mediator, having completed the 40-Hour Mediation Training Program at the Frank Evans Center for Conflict Resolution, South Texas College of Law Houston.  See Tex. Civ. Prac. & Rem. Code § 154.052(a) (qualifications of impartial third party).  He has successfully mediated disputes pre-litigation, in litigation in both Texas and federal courts, and on appeal.</p>
+        <p>Justice Jennings has a Certificate in Advanced Arbitration Skills, Commercial Arbitration (International and Domestic), from the A.A. White Dispute Resolution Center at the University of Houston Law Center.  And he is on the Commercial and Consumer Rosters of the American Arbitration Association.</p>
+        <p>During his 18 years of distinguished judicial service on one of the busiest appellate courts in the United States, Terry Jennings authored over 1200 opinions on the merits.  He is Board Certified in Civil Appellate Law by the Texas Board of Legal Specialization.</p>
+        <p>Please feel free to contact Justice Jennings for further information and references.</p>
+        <br>
+        <br>
+        <div class="text-center">
+        <p>“Discourage litigation. Persuade your clients to compromise, whenever you can. Point out to them the nominal winner is often a real loser; in fees, expenses and waste of time.”
+				<br><i>— Abraham Lincoln</i></p>
+
+        <p>“The courts of this country should not be the places where resolution of disputes begins. They should be the places where the disputes end after alternative methods of resolving disputes have been considered and tried.”
+        <br><i>— Justice Sandra Day O’Connor</i></p>
+        </div>
+
+         </p>
+       </div>
+     </div>
+   </div>
+
+   <footer id="contact" class="text-center">
+         <h3 class="text-center">Contact</h3>
+           <div class="row text-center mx-auto">
+             <div class="col-sm-3">
+
+             </div>
+             <div class="col-sm-3">
+               <p><span class="glyphicon glyphicon-map-marker"></span>Houston, Texas, USA</p>
+               <p><span class="glyphicon glyphicon-earphone"></span>Phone: 832-629-0410</p>
+             </div>
+             <div class="col-sm-3">
+               <p><span class="glyphicon glyphicon-envelope"></span>Email: justiceterryjennings@gmail.com</p>
+               <p><span class="glyphicon glyphicon-th-large"></span>LinkedIn: <a href="https://www.linkedin.com/in/terry-jennings-35625740">Terry Jennings</a></p>
+            </div>
+            <div class="col-sm-3"></div>
+           </div>
+           <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">TO TOP</a>
+         </div>
+   </footer>
+
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#home']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>

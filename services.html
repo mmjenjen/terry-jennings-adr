@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Terry Jennings - ADR - Services</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#myPage">TERRY JENNINGS - ADR</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="resume.html">RESUME</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="long-pic">
+    <img src="harris-4.jpg" alt="Courthouse Ceiling" style="width: 100%;">
+  </div>
+
+  <!-- Container (SERVICES Section) -->
+  <div id="services">
+    <div class="container">
+      <h1 class="text-center">TERRY JENNINGS - ADR SERVICES</h1>
+      <br>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="terry.jpg" class="img-circle person" alt="Terry Jennings">
+          <img src="awards.jpg"  alt="Awards" class="img-fluid">
+          <img src="aaa.jpg"  alt="AAA" class="inline-img logo">
+          <img src="board-certified.jpg"  alt="Board Certification" class="inline-img logo">
+        </div>
+        <div class="col-sm-6 square">
+            <p><strong>Arbitration</strong></p>
+            <ul>
+              <li>Daily rate for hearing
+	             <li>Hourly rate for pre-hearing study and post-hearing work
+            </ul>
+            <br>
+            <p><strong>Mediation</strong></p>
+            <ul>
+              <li>Daily or half-day rate per party for Mediation Session (lunch is provided for all attendees for full-day sessions)
+	            <li>Flat fee is usually inclusive of preparation time (if case complexity requires more extensive preparation, hourly rate applies to such preparation)
+            </ul>
+        </div>
+        <div class="col-sm-6 square">
+          <p><strong>Travel</strong></p>
+          <ul>
+            <li>Lower hourly rate applies to actual travel time
+             <li>Reimbursement for reasonable out-of-pocket expenses for travel (hotel, airfare, cab fare, meals)
+          </ul>
+          <br>
+          <p><strong>Arbitration/Mediation Cancellation Fees</strong></p>
+          <ul>
+            <li>If cancellation notice given 8-14 days prior to hearing/session, 25% of full fee
+             <li>If cancellation notice given 7 days or less prior to hearing/session, 50% of full fee
+          </ul>
+
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="contact" class="text-center">
+          <h3 class="text-center">Contact</h3>
+            <div class="row text-center mx-auto">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-3">
+                <p><span class="glyphicon glyphicon-map-marker"></span>Houston, Texas, USA</p>
+                <p><span class="glyphicon glyphicon-earphone"></span>Phone: 832-629-0410</p>
+              </div>
+              <div class="col-sm-3">
+                <p><span class="glyphicon glyphicon-envelope"></span>Email: justiceterryjennings@gmail.com</p>
+                <p><span class="glyphicon glyphicon-th-large"></span>LinkedIn: <a href="https://www.linkedin.com/in/terry-jennings-35625740">Terry Jennings</a></p>
+             </div>
+             <div class="col-sm-3"></div>
+            </div>
+            <a class="up-arrow" href="#services" data-toggle="tooltip" title="TO TOP">TO TOP</a>
+          </div>
+    </footer>
+
+
+  <script>
+  $(document).ready(function(){
+   // Initialize Tooltip
+   $('[data-toggle="tooltip"]').tooltip();
+
+   // Add smooth scrolling to all links in navbar + footer link
+   $(".navbar a, footer a[href='#services']").on('click', function(event) {
+
+     // Make sure this.hash has a value before overriding default behavior
+     if (this.hash !== "") {
+
+       // Prevent default anchor click behavior
+       event.preventDefault();
+
+       // Store hash
+       var hash = this.hash;
+
+       // Using jQuery's animate() method to add smooth page scroll
+       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+       $('html, body').animate({
+         scrollTop: $(hash).offset().top
+       }, 900, function(){
+
+         // Add hash (#) to URL when done scrolling (default click behavior)
+         window.location.hash = hash;
+       });
+     } // End if
+   });
+  })
+  </script>
